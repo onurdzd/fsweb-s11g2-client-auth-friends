@@ -23,10 +23,10 @@ const Header = () => {
           {!localStorage.getItem("token") && (
             <button onClick={() => history.push("/login")}>LOGIN.</button>
           )}
-          <button onClick={() => history.push("/friendList")}>
+          <button onClick={() => history.push("/friends/")}>
             FRIENDLIST.
           </button>
-          <button onClick={() => history.push("/addFriend")}>ADDFRIEND.</button>
+          <button onClick={() => history.push("/friends/add")}>ADDFRIEND.</button>
           {localStorage.getItem("token") && (
             <button onClick={logOut}>LOGOUT</button>
           )}
